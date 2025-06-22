@@ -27,7 +27,6 @@ This project implements a **digital room occupancy counter** using VHDL. It simu
 | `RoomCounter.vhd`         | Top-level entity: `RoomCounter`          |
 | `enter_sensor_logic.vhd` | Submodule that determines entry permission|
 | `dofile.do`           | ModelSim script to simulate test scenarios   |
-| `RoomCounter_tb.vhd`  | (Optional) Testbench to drive simulation     |
 | `README.md`           | Addiontal README file inside project folder for more info 👋       |
 
 ---
