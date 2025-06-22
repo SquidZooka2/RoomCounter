@@ -1,0 +1,89 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Jun 19 21:07:39 2025
+# Process ID: 23512
+# Current directory: /nfs/home/a/ad_benha/COEN313/Project/Modelsim/Code
+# Command line: vivado
+# Log file: /nfs/home/a/ad_benha/COEN313/Project/Modelsim/Code/vivado.log
+# Journal file: /nfs/home/a/ad_benha/COEN313/Project/Modelsim/Code/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project 313_project /nfs/home/a/ad_benha/COEN313/Project/Modelsim/Code/313_project -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/CMC/tools/xilinx/Vivado_2018.2/Vivado/2018.2/data/ip'.
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 6282.031 ; gain = 43.098 ; free physical = 9860 ; free virtual = 21809
+set_property target_language VHDL [current_project]
+set_property simulator_language VHDL [current_project]
+add_files -norecurse {/nfs/home/a/ad_benha/COEN313/Project/Modelsim/Code/project.vhd /nfs/home/a/ad_benha/COEN313/Project/Modelsim/Code/enter_sensor_logic.vhd}
+import_files -force -norecurse
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: RoomCounter
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 6384.449 ; gain = 47.379 ; free physical = 9739 ; free virtual = 21699
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'RoomCounter' [/nfs/home/a/ad_benha/COEN313/Project/Modelsim/Code/313_project/313_project.srcs/sources_1/imports/Code/project.vhd:14]
+INFO: [Synth 8-3491] module 'enter_sensor_logic' declared at '/nfs/home/a/ad_benha/COEN313/Project/Modelsim/Code/313_project/313_project.srcs/sources_1/imports/Code/enter_sensor_logic.vhd:5' bound to instance 'u_enter_sensor' of component 'enter_sensor_logic' [/nfs/home/a/ad_benha/COEN313/Project/Modelsim/Code/313_project/313_project.srcs/sources_1/imports/Code/project.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'enter_sensor_logic' [/nfs/home/a/ad_benha/COEN313/Project/Modelsim/Code/313_project/313_project.srcs/sources_1/imports/Code/enter_sensor_logic.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'enter_sensor_logic' (1#1) [/nfs/home/a/ad_benha/COEN313/Project/Modelsim/Code/313_project/313_project.srcs/sources_1/imports/Code/enter_sensor_logic.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'RoomCounter' (2#1) [/nfs/home/a/ad_benha/COEN313/Project/Modelsim/Code/313_project/313_project.srcs/sources_1/imports/Code/project.vhd:14]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 6413.422 ; gain = 76.352 ; free physical = 9751 ; free virtual = 21713
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 6413.422 ; gain = 76.352 ; free physical = 9752 ; free virtual = 21713
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 6413.422 ; gain = 76.352 ; free physical = 9752 ; free virtual = 21713
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:25 . Memory (MB): peak = 6856.758 ; gain = 519.688 ; free physical = 9332 ; free virtual = 21331
+9 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 6856.758 ; gain = 519.688 ; free physical = 9332 ; free virtual = 21331
+write_schematic -format pdf -orientation portrait /nfs/home/a/ad_benha/COEN313/Project/Modelsim/Code/RTL_schematic.pdf
+/nfs/home/a/ad_benha/COEN313/Project/Modelsim/Code/RTL_schematic.pdf
+launch_runs synth_1 -jobs 2
+[Thu Jun 19 21:14:39 2025] Launched synth_1...
+Run output will be captured here: /nfs/home/a/ad_benha/COEN313/Project/Modelsim/Code/313_project/313_project.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+write_schematic -format pdf -orientation portrait /nfs/home/a/ad_benha/COEN313/Project/Modelsim/Code/schematic.pdf
+/nfs/home/a/ad_benha/COEN313/Project/Modelsim/Code/schematic.pdf

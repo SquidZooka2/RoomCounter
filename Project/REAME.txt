@@ -1,0 +1,22 @@
+ADAM BENHAMOU
+2025-06-22
+
+ROOM COUNTER PROJECT
+
+Going by file type I will explain what each file contained inside the project directory does.
+
+
+1. dofile.do --> executes commands sequentially. Used for the testbench simulation in ModelSim
+
+2. conceptual diagram.pdf --> Before writing VHDL code, a conceptual version was drawn using OneNote
+3. Detailed_schematic.pdf --> Detailed implementation by Vivado Software of the synthesized VHDL code
+4. Expectations-of-Originality.pdf --> Confirm this is my work and my work only & Signature 
+5. RTL_schematic.pdf 	  --> Register Transfer Level implementation by Vivado Software of the VHDL code
+
+6. SIMULATION.png	  --> ModelSim testbench (compressed 8-bit data bus), I/O pins only
+7. Detailed_simulation.png --> ModelSim testbench (expanded version with individual bits), I/O pins only
+
+8. VivadoLog.txt	  --> Vivado Log file
+
+9. enter_sensor_logic	  --> VHDL code 
+10. RoomCounter		  --> VHDL code (requires "enter_sensor_logic" to be compiled)  
